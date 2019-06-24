@@ -34,4 +34,4 @@ meetups.each do |meetup|
 end
 
 
-File.write('index.html', template.result())
+File.write('output/index.html', template.result())

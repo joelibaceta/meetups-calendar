@@ -2,5 +2,8 @@ language: ruby
 
 deploy:
   provider: pages
+  skip_cleanup: true
+  keep_history: true
+  allow_empty_commit: true
   github_token: $GITHUB_TOKEN
   local_dir: output

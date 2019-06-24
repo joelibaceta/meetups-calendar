@@ -31,7 +31,7 @@
                 this.borderColor = null;
             }
 
-            <% meetups.each do |meetup| %>
+            <% @meetups.each do |meetup| %>
                 color =  getRandomColor();
                 calendar = new CalendarInfo();
                 calendar.id = '<%=meetup%>';
@@ -60,7 +60,7 @@
             });
 
             calendar.createSchedules( 
-                <%= calendar.to_json %>
+                <%= @calendar.to_json %>
             );
         </script>
     </body>

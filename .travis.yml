@@ -1,7 +1,5 @@
 language: ruby
 
-before_deploy:
-  - ruby build.rb
 deploy:
   provider: pages
   github_token: $GITHUB_TOKEN
